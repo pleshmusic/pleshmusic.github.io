@@ -97,21 +97,31 @@ a.it {
 }
 
 #YTVideo1 {
+	display: block;
+	margin: 0 auto;
 	text-align: center;
 }
 
 #YTVideo2 {
+	display: block;
+	margin: 0 auto;
 	text-align: center;
 }
 
 #YTVideo3 {
+	display: block;
+	margin: 0 auto;
 	text-align: center;
 }
 
 #YTVideo4 {
+	display: block;
+	margin: 0 auto;
 	text-align: center;
 }
 
 #footer {
+	display: block;
+	margin: 0 auto;
 	text-align: center;
 }
