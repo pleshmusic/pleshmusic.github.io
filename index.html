@@ -6,9 +6,6 @@
 	</head>
 
 	<body>
-	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
-		
 		<div id="container">
 			<div id="wrapper">
 
@@ -21,7 +18,7 @@
 				<a class="btn-1" title="Video" alt="Video" href="https://www.youtube.com/channel/UCn3YpEdpRcBx3NqElLGaCdw">
 					<span class="text-hidden">Video</span>
 				</a>
-				<a class="btn-2" title="Music" alt="Music" href="https://plesh.bandcamp.com/">
+				<a class="btn-2" title="Music" alt="Music" href="https://smarturl.it/qly3ql">
 					<span class="text-hidden">Music</span>
 				</a>
 				<a class="btn-3" title="About" alt="About" href="about.html">
@@ -31,9 +28,64 @@
 
 				</div>
 			</div>
-			
-			<div id="featured">
-				<a href="https://plesh.bandcamp.com/"><img src="images/PROFILE.png" width= "940px" alt="Featured" /></a>
+				<style>
+					.slide-container{
+						position:relative;
+						padding-top: 5px;
+
+					}
+					.slide img{
+						width:940px;
+						height:500px;
+					}
+					.effect{
+						animation-name:effect;
+						animation-duration:2s;
+					}
+					@keyframes effect{
+						from{
+							opacity:0.2;
+					}
+					to{
+							opacity:1;
+					}
+					}
+
+				</style>
+
+				<div class="slide-container">
+					
+					<div class="effect slide">
+					<a href="https://distrokid.com/hyperfollow/plesh/brie-2">
+					<img src="images/BannerImage02.jpg"/>
+					</div>
+
+					<div class="effect slide">
+					<a href="https://distrokid.com/hyperfollow/plesh/new-game-plus">
+					<img src="images/BannerImage01.jpg"/>
+					</div>
+				</div>
+
+			<script>
+				var index=0;
+				show();
+				function show(){
+					var i;
+					var slides=document.getElementsByClassName("slide");
+					for(i=0;i<slides.length;i++){
+						slides[i].style.display="none";
+				}
+
+				index=index+1;
+				if(index>slides.length){
+					index=1;
+				}
+				slides[index-1].style.display="block";
+				setTimeout(show,6000);
+			}				
+			</script>
+
+
 			</div>
 				<hr />
 
@@ -55,30 +107,32 @@
 
 			</div>
 				<hr />
-				<div id="definition">
-				<img src="images/PleshDefine.png" />
 
-			<div id="fbfeed">
-			<div class="fb-page" data-href="https://www.facebook.com/PLESH/" data-tabs="timeline" data-width="400" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PLESH/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PLESH/">PLESH</a></blockquote></div>
+			<div id="YTVideo1">
+			<iframe width="940" height="500" src="https://www.youtube.com/embed/lEuGv8Wq5Go" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 
-			</div>
-				<div class="MusicVideo">
-				<iframe width="480" height="315" src="https://www.youtube.com/embed/lEuGv8Wq5Go" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				
-			</div>
-				
-			<div id="break">
-			<hr />
+			<div id="YTVideo2">
+			<iframe width="940" height="500" src="https://www.youtube.com/embed/3uMzPnNoAiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 
-			<div id="footer">
-				<h3> &copy 2019 Phantom Potato Productions </h3>
+			<div id="YTVideo3">
+			<iframe width="940" height="500" src="https://www.youtube.com/embed/s7_l0kaGiJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			<div id="YTVideo4">
+			<iframe width="940" height="500" src="https://www.youtube.com/embed/Aawb9JEqQf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
 			</div>	
 			</div>
 		</div>
-		</div>	
 		</div>
+			<div id="footer">
+				<h3> &copy 2020 Phantom Potato Productions </h3>
+
+		</div>
+
 	</body>
 
 <html/>
